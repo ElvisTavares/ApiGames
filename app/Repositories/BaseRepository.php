@@ -2,7 +2,13 @@
 
 namespace App\Repositories;
 
-class BaseRepository
+use Illuminate\Database\Eloquent\Model;
+
+class BaseRepository implements BaseRepositoryInteface
 {
-    
+
+    public function all()
+    {
+       return $this->model->all();
+    }
 }

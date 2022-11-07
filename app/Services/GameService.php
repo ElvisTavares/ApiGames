@@ -6,5 +6,8 @@ use App\Services\Interfaces\GameServiceInterface;
 
 class GameService implements GameServiceInterface
 {
-    
+    public function list()
+    {
+        
+    }
 }
